@@ -1,0 +1,31 @@
+{
+  "name": "nexo",
+  "version": "0.1.0",
+  "description": "CSS framework based on modern technologies: Flexbox with BEM and Atomic Design methodologies.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaligari/nexo.git"
+  },
+  "keywords": [
+    "css",
+    "bem",
+    "atomic",
+    "design",
+    "bulma",
+    "bemskel",
+    "flex"
+  ],
+  "author": "Sebastian Kopeć",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaligari/nexo/issues"
+  },
+  "homepage": "https://github.com/kaligari/nexo#readme"
+}
