@@ -1,2 +1,2 @@
 # xeno-css
-CSS framework based on modern technologies: Grid, Flexbox with BEM and Atomic Design methodologies.
+CSS framework based on modern technologies: Flexbox with BEM and Atomic Design methodologies.
