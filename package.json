@@ -1,31 +1,39 @@
 {
-  "name": "nexo",
-  "version": "0.1.0",
-  "description": "CSS framework based on modern technologies: Flexbox with BEM and Atomic Design methodologies.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kaligari/nexo.git"
-  },
-  "keywords": [
-    "css",
-    "bem",
-    "atomic",
-    "design",
-    "bulma",
-    "bemskel",
-    "flex"
-  ],
-  "author": "Sebastian Kopeć",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kaligari/nexo/issues"
-  },
-  "homepage": "https://github.com/kaligari/nexo#readme"
+    "name": "nexo",
+    "version": "0.1.0",
+    "description": "CSS framework based on modern technologies: Flexbox with BEM and Atomic Design methodologies.",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development ./node_modules/.bin/webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development ./node_modules/.bin/webpack --watch --watch-poll --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "build": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kaligari/nexo.git"
+    },
+    "keywords": [
+        "css",
+        "bem",
+        "atomic",
+        "design",
+        "bulma",
+        "bemskel",
+        "flex"
+    ],
+    "author": "Sebastian Kopeć",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kaligari/nexo/issues"
+    },
+    "homepage": "https://github.com/kaligari/nexo#readme",
+    "devDependencies": {
+        "cross-env": "^7.0.2",
+        "laravel-mix": "^5.0.4",
+        "sass": "^1.26.3",
+        "sass-loader": "^8.0.2"
+    }
 }
