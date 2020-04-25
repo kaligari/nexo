@@ -198,6 +198,7 @@ select,
 textarea {
   font-size: 100%;
   /* 1 */
+  font-family: inherit;
   margin: 0;
   /* 2 */
   vertical-align: baseline;
@@ -363,10 +364,9 @@ textarea {
 
 /* 2. Abstracts - Variables, functions, mixins, and placeholders */
 :root {
-  font-family: "Roboto", sans-serif;
   /* Colors */
   --color-light: #fff;
-  --color-primary: red;
+  --color-primary: #0963a3;
   /* Sizes */
   --size-default: 1rem;
   --radius-default: 8px;
@@ -374,6 +374,10 @@ textarea {
   --slow: 800ms;
   --normal: 400ms;
   --fast: 200ms;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /* 3. Base files */
