@@ -1,0 +1,39 @@
+:root
+    /* Size, shape */
+    --a-button-padding: var(--size-default) calc(var(--size-default) * 2)
+    --a-button-border-radius: var(--radius-default)
+
+    /* Default colors */
+    --a-button-border-color: var(--color-primary)
+    --a-button-background-color: var(--color-light)
+    --a-button-color: var(--color-primary)
+
+    /* Default hover */
+    --a-button-hover-background-color: var(--color-primary)
+    --a-button-hover-color: var(--color-light)
+
+    /* Primary colors */
+    --a-button-primary-background-color: var(--color-primary)
+    --a-button-primary-color: var(--color-light)
+
+    /* Primary hover */
+    --a-button-primary-hover-background-color: var(--color-light)
+    --a-button-primary-hover-color: var(--color-primary)
+
+.a-button
+    background-color: var(--a-button-background-color)
+    border: 1px solid var(--a-button-border-color)
+    border-radius: var(--radius-default)
+    color: var(--a-button-color)
+    height: auto
+    padding: var(--a-button-padding)
+    transition: background-color var(--normal), color var(--normal), border-color var(--normal)
+    &:hover
+        background-color: var(--a-button-hover-background-color)
+        color: var(--a-button-hover-color)
+    &--primary
+        color: var(--a-button-primary-color)
+        background-color: var(--a-button-primary-background-color)
+        &:hover
+            background-color: var(--a-button-primary-hover-background-color)
+            color: var(--a-button-primary-hover-color)
