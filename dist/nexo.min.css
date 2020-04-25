@@ -377,6 +377,10 @@ textarea {
 }
 
 /* 3. Base files */
+.\--textCentered {
+  text-align: center;
+}
+
 /* 4. Layout-related sections */
 .l-container {
   max-width: 1260px;
