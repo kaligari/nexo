@@ -1,0 +1,12 @@
+:root
+    /* Size */
+    --a-title-font-size: var(--size-2)
+    --a-title-margin-bottom: var(--size-default)
+    --a-title-weight: var(--weight-bold)
+.a-title
+    font-size: var(--a-title-font-size)
+    font-weight: var(--a-title-weight)
+    margin-bottom: var(--a-title-margin-bottom)
+    @for $i from 1 through 8
+        &--size-#{$i}
+            font-size: var(--size-#{$i})
