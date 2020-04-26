@@ -4,8 +4,21 @@
     --color-primary: #0963a3
 
     /* Sizes */
-    --size-default: 1rem
+    --size-1: 3rem
+    --size-2: 2.5rem
+    --size-3: 2rem
+    --size-4: 1.5rem
+    --size-5: 1.25rem
+    --size-6: 1rem
+    --size-7: .75rem
+    --size-8: .5rem
+    --size-default: var(--size-6)
     --radius-default: 8px
+
+    /* Weights */
+    --weight-bold: 700
+    --weight-normal: 300
+    --weight-light: 100
 
     /* Speed */
     --slow: 800ms
@@ -14,3 +27,8 @@
 
 body
     font-family: 'Roboto', sans-serif
+
+
+=mobile-small
+  @media screen and (max-width: 400px)
+    @content
