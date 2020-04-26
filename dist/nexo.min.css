@@ -428,8 +428,12 @@ body {
   border: 1px solid var(--a-button-border-color);
   border-radius: var(--radius-default);
   color: var(--a-button-color);
+  cursor: pointer;
+  display: inline-flex;
   height: auto;
+  line-height: 1;
   padding: var(--a-button-padding);
+  text-decoration: none;
   transition: background-color var(--normal), color var(--normal), border-color var(--normal);
 }
 .a-button:hover {
