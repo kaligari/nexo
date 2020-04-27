@@ -367,6 +367,7 @@ textarea {
   /* Colors */
   --color-light: #fff;
   --color-primary: #0963a3;
+  --color-info: #67c6fa;
   /* Sizes */
   --size-1: 3rem;
   --size-2: 2.5rem;
@@ -413,6 +414,54 @@ body {
   flex-grow: 1;
   flex-basis: 0;
   padding: 1rem;
+}
+.l-row__column--1 {
+  flex: none;
+  width: 8.3333333333%;
+}
+.l-row__column--2 {
+  flex: none;
+  width: 16.6666666667%;
+}
+.l-row__column--3 {
+  flex: none;
+  width: 25%;
+}
+.l-row__column--4 {
+  flex: none;
+  width: 33.3333333333%;
+}
+.l-row__column--5 {
+  flex: none;
+  width: 41.6666666667%;
+}
+.l-row__column--6 {
+  flex: none;
+  width: 50%;
+}
+.l-row__column--7 {
+  flex: none;
+  width: 58.3333333333%;
+}
+.l-row__column--8 {
+  flex: none;
+  width: 66.6666666667%;
+}
+.l-row__column--9 {
+  flex: none;
+  width: 75%;
+}
+.l-row__column--10 {
+  flex: none;
+  width: 83.3333333333%;
+}
+.l-row__column--11 {
+  flex: none;
+  width: 91.6666666667%;
+}
+.l-row__column--12 {
+  flex: none;
+  width: 100%;
 }
 
 /* 5. Components - atoms and molecules */
@@ -464,12 +513,16 @@ body {
 :root {
   --a-notification-color: var(--color-light);
   --a-notification-background-color: var(--color-primary);
+  --a-notification-info-background-color: var(--color-info);
 }
 
 .a-notification {
   color: var(--a-notification-color);
   background-color: var(--a-notification-background-color);
   padding: 1rem;
+}
+.a-notification--info {
+  background-color: var(--a-notification-info-background-color);
 }
 
 :root {
