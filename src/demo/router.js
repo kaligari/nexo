@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from './views/Home'
 import Grid from './views/Grid'
 import Buttons from './views/Buttons'
 import Typography from './views/Typography'
@@ -18,6 +19,10 @@ let routes = ['grid','queries','typography','buttons','forms','lists','code','ta
 const router = new Router({
     routes: [
         {
+            path: '/',
+            name: 'home',
+            component: Home
+        },{
             path: '/grid',
             name: 'grid',
             component: Grid
