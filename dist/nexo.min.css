@@ -496,6 +496,10 @@ body {
   padding: var(--a-button-padding);
   text-decoration: none;
   transition: background-color var(--normal), color var(--normal), border-color var(--normal);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .a-button:hover {
   background-color: var(--a-button-hover-background-color);
