@@ -394,8 +394,14 @@ body {
 }
 
 /* 3. Base files */
-.\--textCentered {
+.\--textAlign-centered {
   text-align: center;
+}
+.\--textAlign-left {
+  text-align: left;
+}
+.\--textAlign-right {
+  text-align: right;
 }
 
 /* 4. Layout-related sections */
@@ -465,6 +471,10 @@ body {
 }
 
 /* 5. Components - atoms and molecules */
+code {
+  font-family: monospace;
+}
+
 :root {
   /* Size, shape */
   --a-button-padding: var(--size-default) calc(var(--size-default) * 2);
