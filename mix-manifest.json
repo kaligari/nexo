@@ -1,5 +1,5 @@
 {
-    "/docs/docs.js": "/docs/docs.js",
+    "/dist/docs.js": "/dist/docs.js",
     "/dist/nexo.min.css": "/dist/nexo.min.css",
-    "/docs/nexo.min.css": "/docs/nexo.min.css"
+    "/dist/index.html": "/dist/index.html"
 }
