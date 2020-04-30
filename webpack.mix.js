@@ -6,7 +6,7 @@ mix.options({
 });
 
 mix.sass('./src/main.sass', './dist/nexo.min.css')
-.js('./src/demo/main.js', './demo/demo.js')
+.js('./src/docs/main.js', './docs/docs.js')
 
 // mix.webpackConfig({
 // 	module: {

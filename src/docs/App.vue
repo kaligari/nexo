@@ -22,6 +22,12 @@
                         <div class="l-navbar__dropdown">
                             <router-link
                                 class="l-navbar__item l-navbar__item--dropdown"
+                                :to="{ name: 'columns' }"
+                            >
+                                Columns
+                            </router-link>
+                            <router-link
+                                class="l-navbar__item l-navbar__item--dropdown"
                                 :to="{ name: 'typography' }"
                             >
                                 Typography
@@ -67,8 +73,6 @@
 </template>
 
 <script>
-//'grid','queries','typography','buttons','forms','lists','code','tables','notifications','pagination','utilities'
-import { routes as components } from './router'
 export default {
     data() {
         return {

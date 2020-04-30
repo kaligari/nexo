@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home'
-import Grid from './views/Grid'
+import Columns from './views/Columns'
 import Buttons from './views/Buttons'
 import Typography from './views/Typography'
 
@@ -14,8 +14,6 @@ String.prototype.toCamelCase = function() {
     });
 }
 
-let routes = ['grid','queries','typography','buttons','forms','lists','code','tables','notifications','pagination','utilities']
-
 const router = new Router({
     routes: [
         {
@@ -23,9 +21,9 @@ const router = new Router({
             name: 'home',
             component: Home
         },{
-            path: '/grid',
-            name: 'grid',
-            component: Grid
+            path: '/columns',
+            name: 'columns',
+            component: Columns
         },{
             path: '/typography',
             name: 'typography',
@@ -38,7 +36,4 @@ const router = new Router({
     ]
 })
 
-export {
-    router,
-    routes
-}
+export default router
