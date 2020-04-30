@@ -1,6 +1,5 @@
 {
-    "/docs/docs.js": "/docs/docs.js",
-    "/build/nexo.min.css": "/build/nexo.min.css",
-    "/docs/index.html": "/docs/index.html",
-    "/docs/nexo.min.css": "/docs/nexo.min.css"
+    "/dist/docs.js": "/dist/docs.js",
+    "/dist/nexo.min.css": "/dist/nexo.min.css",
+    "/dist/index.html": "/dist/index.html"
 }

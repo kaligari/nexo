@@ -1,11 +1,22 @@
 :root
-    --a-notification-color: var(--color-light)
+    /* Size */
+    --a-notification-padding: var(--size-default)
+
+    /* Default colors */
+    --a-notification-color: var(--color-secondary)
     --a-notification-background-color: var(--color-primary)
     --a-notification-info-background-color: var(--color-info)
+
+    /* Secondary colors */
+    --a-notification-secondary-color: var(--color-primary)
+    --a-notification-secondary-background-color: var(--color-secondary)
 
 .a-notification
     color: var(--a-notification-color)
     background-color: var(--a-notification-background-color)
-    padding: 1rem
+    padding: var(--a-notification-padding)
+    &--secondary
+        color: var(--a-notification-secondary-color)
+        background-color: var(--a-notification-secondary-background-color)
     &--info
         background-color: var(--a-notification-info-background-color)

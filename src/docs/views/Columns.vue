@@ -21,7 +21,7 @@
                     </p>
                 </div>
                 <div class="l-row__column">
-                    <p class="a-notification a-notification--info">
+                    <p class="a-notification a-notification--secondary">
                         <code>
                             auto
                         </code>

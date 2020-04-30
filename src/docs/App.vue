@@ -76,7 +76,6 @@
 export default {
     data() {
         return {
-            components
         }
     }
 }
@@ -87,7 +86,7 @@ export default {
     font-family: Michroma, sans-serif
     font-size: 20px
     a
-        color: #e78200
+        color: #17252a
         text-decoration: none
 
 </style>
