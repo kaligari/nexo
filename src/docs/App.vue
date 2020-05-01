@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div :style="VuexStyles" >
         <nav
             class="l-navbar"
             role="navigation"
@@ -31,6 +31,12 @@
                                 :to="{ name: 'typography' }"
                             >
                                 Typography
+                            </router-link>
+                            <router-link
+                                class="l-navbar__item l-navbar__item--dropdown"
+                                :to="{ name: 'navbar' }"
+                            >
+                                Navbar
                             </router-link>
                         </div>
                     </div>
@@ -76,6 +82,18 @@
 export default {
     data() {
         return {
+
+        }
+    },
+    computed: {
+        VuexStyles() {
+            return [
+                {
+                    '--l-navbar-height': this.$store.getters.lNavbarHeight
+                },{
+                    '--l-navbar__item-padding': this.$store.getters.lNavbarItemPadding
+                }
+            ]
         }
     }
 }
