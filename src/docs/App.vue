@@ -1,5 +1,5 @@
 <template>
-    <div :style="VuexStyles" >
+    <div>
         <nav
             class="l-navbar"
             role="navigation"
@@ -87,6 +87,16 @@
 
 <script>
 export default {
+    watch: {
+        VuexStyles: {
+            deep: true,
+            handler() {
+                for(const [item, key] of Object.entries(this.VuexStyles)) {
+                    document.documentElement.style.setProperty(item, key)
+                }
+            }
+        }
+    },
     computed: {
         VuexStyles() {
             return this.$store.getters.cssVariables
@@ -98,7 +108,7 @@ export default {
 <style lang="sass">
 .l-navbar__brand
     font-family: Michroma, sans-serif
-    font-size: 20px
+    font-size: 1.25rem
     a
         color: #17252a
         text-decoration: none

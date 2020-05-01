@@ -10,12 +10,8 @@
                 <div class="l-row__column">
                     <h2 class="a-title a-title--size-4">Available variables</h2>
                     <css-controller :fields="[
-                        '--color-light',
-                        '--color-primary',
-                        '--color-primary-variant',
-                        '--color-secondary',
-                        '--color-secondary-variant',
-                        '--color-info',
+                        '--root-size',
+                        '--size-default',
                         '--size-1',
                         '--size-2',
                         '--size-3',
@@ -24,7 +20,12 @@
                         '--size-6',
                         '--size-7',
                         '--size-8',
-                        '--size-default',
+                        '--color-light',
+                        '--color-primary',
+                        '--color-primary-variant',
+                        '--color-secondary',
+                        '--color-secondary-variant',
+                        '--color-info',
                         '--radius-default',
                         '--column-padding',
                         '--weight-bold',
