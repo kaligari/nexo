@@ -1,10 +1,13 @@
 .l-navbar
     $this: &
-    max-width: 1260px
     margin: 0 auto
     align-items: stretch
     display: flex
     height: 4rem
+    +desktop
+        max-width: $desktop - $container-offset
+    +widescreen
+        max-width: $widescreen - $container-offset
     &--fluid
         max-width: none
     &__brand

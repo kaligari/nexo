@@ -1,10 +1,13 @@
 .l-row
-    display: flex
+    +desktop
+        display: flex
     &__column
-        flex-grow: 1
-        flex-basis: 0
-        padding: 1rem        
+        padding: 1rem
+        +desktop
+            flex-grow: 1
+            flex-basis: 0
         @for $i from 1 through 12
             &--#{$i}
-                flex: none
-                width: percentage( $i / 12 )
+                +desktop
+                    flex: none
+                    width: percentage( $i / 12 )
