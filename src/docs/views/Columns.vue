@@ -15,17 +15,16 @@
                     :class="`l-row__column--${i}`"
                 >
                     <p class="a-notification">
-                        <code>
-                            l-row__column--{{ i }}
-                        </code>
+                        {{ i }}
                     </p>
                 </div>
                 <div class="l-row__column">
-                    <p class="a-notification a-notification--secondary">
-                        <code>
-                            auto
-                        </code>
-                    </p>
+                    <p class="a-notification a-notification--secondary --paddingLeft-0 --paddingRight-0">&nbsp;</p>
+                </div>
+            </div>
+            <div class="l-row">
+                <div class="l-row__column l-row__column--12 --textAlign-centered">
+                    <p class="a-notification">12</p>
                 </div>
             </div>
         </div>
