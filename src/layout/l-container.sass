@@ -1,6 +1,12 @@
+$container-offset: 64px !default
+
 .l-container
     max-width: 1260px
     width: auto
     position: relative
     margin: 0 auto
     flex-grow: 1
+    +desktop
+        max-width: $desktop - $container-offset
+    +widescreen
+        max-width: $widescreen - $container-offset
