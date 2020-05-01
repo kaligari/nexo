@@ -1,19 +1,24 @@
 <template>
     <div>
         <div
+            class="l-row"
             v-for="field, idx in fields"
             v-bind:key="field"
         >
-            <label :for="field">{{ field }}</label>
-            <input
-                :id="field"
-                type="text"
-                :value="$store.getters.cssVariables[field]"
-                @input="$store.commit('SET_VALUE', {
-                    name: field,
-                    value: $event.target.value
-                })"
-            >
+            <div class="l-row__column --paddingBottom-0 --textAlign-right">
+                <label :for="field">{{ field }}</label>
+            </div>
+            <div class="l-row__column --paddingBottom-0">
+                <input
+                    :id="field"
+                    type="text"
+                    :value="$store.getters.cssVariables[field]"
+                    @input="$store.commit('SET_VALUE', {
+                        name: field,
+                        value: $event.target.value
+                    })"
+                >
+            </div>
         </div>
     </div>
 </template>
