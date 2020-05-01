@@ -12,6 +12,12 @@
             </div>
             <div class="l-navbar__menu">
                 <div class="l-navbar__start">
+                    <router-link
+                        class="l-navbar__item"
+                        :to="{ name: 'variables' }"
+                    >
+                        Variables
+                    </router-link>
                     <div class="l-navbar__item l-navbar__item--hasDropdown">
                         <a
                             href="#"

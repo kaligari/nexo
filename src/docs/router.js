@@ -5,6 +5,7 @@ import Columns from './views/Columns'
 import Buttons from './views/Buttons'
 import Typography from './views/Typography'
 import Navbar from './views/Navbar'
+import Variables from './views/Variables'
 
 Vue.use(Router)
 
@@ -37,6 +38,10 @@ const router = new Router({
             path: '/navbar',
             name: 'navbar',
             component: Navbar
+        },{
+            path: '/variables',
+            name: 'variables',
+            component: Variables
         }
     ]
 })
