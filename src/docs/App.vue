@@ -71,6 +71,7 @@
                     >
                         Nexo CSS on GitHub
                     </a>
+
                 </div>
             </div>
         </nav>
@@ -80,20 +81,9 @@
 
 <script>
 export default {
-    data() {
-        return {
-
-        }
-    },
     computed: {
         VuexStyles() {
-            return [
-                {
-                    '--l-navbar-height': this.$store.getters.lNavbarHeight
-                },{
-                    '--l-navbar__item-padding': this.$store.getters.lNavbarItemPadding
-                }
-            ]
+            return this.$store.getters.cssVariables
         }
     }
 }

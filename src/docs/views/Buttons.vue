@@ -7,6 +7,24 @@
                 </div>
             </div>
             <div class="l-row">
+                <div class="l-row__column">
+                    <h2 class="a-title a-title--size-4">Available variables</h2>
+                    <css-controller :fields="[
+                        '--a-button-padding',
+                        '--a-button-border-radius',
+                        '--a-button-border-color',
+                        '--a-button-background-color',
+                        '--a-button-color',
+                        '--a-button-hover-background-color',
+                        '--a-button-hover-color',
+                        '--a-button-primary-background-color',
+                        '--a-button-primary-color',
+                        '--a-button-primary-hover-background-color',
+                        '--a-button-primary-hover-color'
+                    ]" />
+                </div>
+            </div>
+            <div class="l-row">
                 <div class="l-row__column --textAlign-centered">
                     <button class="a-button">
                         Button

@@ -6,6 +6,14 @@
                     <h1 class="a-title">Columns</h1>
                 </div>
             </div>
+            <div class="l-row">
+                <div class="l-row__column">
+                    <h2 class="a-title a-title--size-4">Available variables</h2>
+                    <css-controller :fields="[
+                        '--column-padding'
+                    ]" />
+                </div>
+            </div>
             <div
                 class="l-row"
                 v-for="i in 11"
