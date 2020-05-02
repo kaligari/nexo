@@ -7,7 +7,7 @@
                 </div>
             </div>
             <div class="l-row">
-                <div class="l-row__column">
+                <div class="l-row__column --textAlign-centered">
                     <h2 class="a-title a-title--size-4">Available variables</h2>
                     <css-controller :fields="[
                         '--root-size',
@@ -31,6 +31,9 @@
                         '--weight-bold',
                         '--weight-normal',
                         '--weight-light',
+                    ]" />
+                    <h2 class="a-title a-title--size-4">Transition, animation speed variables</h2>
+                    <css-controller :fields="[
                         '--slow',
                         '--normal',
                         '--fast'
