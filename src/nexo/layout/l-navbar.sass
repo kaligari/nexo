@@ -2,6 +2,7 @@
     /* Sizes */
     --l-navbar-height: 4rem
     --l-navbar__item-padding: var(--column-padding)
+    --l-navbar__item-color: var(--color-primary)
 
 .l-navbar
     $this: &
@@ -9,12 +10,15 @@
     align-items: stretch
     display: flex
     height: var(--l-navbar-height)
-    +desktop
-        max-width: $desktop - $container-offset
-    +widescreen
-        max-width: $widescreen - $container-offset
-    &--fluid
-        max-width: none
+    &:not(#{$this}--fluid)
+        +desktop
+            width: $desktop - $container-offset
+        +widescreen
+            width: $widescreen - $container-offset
+    &--absolute
+        position: absolute
+        left: 0
+        right: 0
     &__brand
         display: flex
         align-items: center
@@ -40,7 +44,7 @@
         padding: 0 var(--l-navbar__item-padding)
         height: 100%
         text-decoration: none
-        color: var(--color-primary)
+        color: var(--l-navbar__item-color)
         min-height: var(--l-navbar-height)
         position: relative
         white-space: nowrap

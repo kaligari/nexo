@@ -13,7 +13,71 @@
 </head>
 <body>
     <div id="app">
-        Test
+        <nav
+            class="l-navbar l-navbar--fluid l-navbar--absolute"
+            role="navigation"
+            aria-label="main navigation"
+        >
+            <div class="l-navbar__brand">
+                <router-link :to="{ name: 'home' }">
+                    Nexo CSS
+                </router-link>
+            </div>
+            <div class="l-navbar__menu">
+                <div class="l-navbar__start">
+                    <router-link
+                        class="l-navbar__item"
+                        :to="{ name: 'variables' }"
+                    >
+                        Variables
+                    </router-link>
+                    <div class="l-navbar__item l-navbar__item--hasDropdown">
+                        <a
+                            href="#"
+                            class="l-navbar__link"
+                        >
+                            Layout
+                        </a>
+                        <div class="l-navbar__dropdown">
+                            <router-link
+                                class="l-navbar__item l-navbar__item--dropdown"
+                                :to="{ name: 'columns' }"
+                            >
+                                Columns
+                            </router-link>
+                            <router-link
+                                class="l-navbar__item l-navbar__item--dropdown"
+                                :to="{ name: 'typography' }"
+                            >
+                                Typography
+                            </router-link>
+                            <router-link
+                                class="l-navbar__item l-navbar__item--dropdown"
+                                :to="{ name: 'navbar' }"
+                            >
+                                Navbar
+                            </router-link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section
+            class="l-section l-section--height-90vh"
+            style="background-image: url('img/demo1-2.jpg')"
+        ></section>
+        <section class="l-section l-section--height-90vh">
+            <div class="l-container l-container--fluid">
+                <div class="l-row">
+                    <div class="l-row__column l-row__column--8">
+                        Test
+                    </div>
+                    <div class="l-row__column">
+                        <img src="img/demo1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>

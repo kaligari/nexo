@@ -11,7 +11,8 @@
                     <h2 class="a-title a-title--subtitle --textAlign-centered">Available variables</h2>
                     <css-controller :fields="[
                         '--l-navbar-height',
-                        '--l-navbar__item-padding'
+                        '--l-navbar__item-padding',
+                        '--l-navbar__item-color'
                     ]" />
                 </div>
             </div>
