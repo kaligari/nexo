@@ -68,6 +68,22 @@
                             </router-link>
                         </div>
                     </div>
+                    <div class="l-navbar__item l-navbar__item--hasDropdown">
+                        <a
+                            href="#"
+                            class="l-navbar__link"
+                        >
+                            Demos
+                        </a>
+                        <div class="l-navbar__dropdown">
+                            <a
+                                class="l-navbar__item l-navbar__item--dropdown"
+                                href="demos/demo1.html"
+                            >
+                                Template 1
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="l-navbar__end">
                     <a

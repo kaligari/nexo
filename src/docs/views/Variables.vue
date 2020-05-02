@@ -8,7 +8,7 @@
             </div>
             <div class="l-row">
                 <div class="l-row__column">
-                    <h2 class="a-title a-title--subtitle --textAlign-centered">Available variables</h2>
+                    <h2 class="a-title a-title--subtitle --textAlign-centered">Available global variables</h2>
                     <css-controller :fields="[
                         '--root-size',
                         '--size-default',
@@ -29,6 +29,10 @@
                         '--slow',
                         '--normal',
                         '--fast'
+                    ]" />
+                    <h2 class="a-title a-title--subtitle --textAlign-centered">Body variables</h2>
+                    <css-controller :fields="[
+                        '--body-background-color'
                     ]" />
                 </div>
             </div>

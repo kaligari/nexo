@@ -1,6 +1,6 @@
 :root
     /* Sizes */
-    --l-navbar-height:4rem
+    --l-navbar-height: 4rem
     --l-navbar__item-padding: var(--column-padding)
 
 .l-navbar
@@ -35,7 +35,7 @@
         margin-left: auto
     &__item,
     &__link
-        display: inline-flex
+        display: flex
         align-items: center
         padding: 0 var(--l-navbar__item-padding)
         height: 100%
@@ -43,6 +43,7 @@
         color: var(--color-primary)
         min-height: var(--l-navbar-height)
         position: relative
+        white-space: nowrap
         z-index: 1
     &__item
         &--dropdown
