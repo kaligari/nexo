@@ -2,13 +2,13 @@
     <section class="l-section">
         <div class="l-container">
             <div class="l-row">
-                <div class="l-row__column --textAlign-centered">
-                    <h1 class="a-title">Columns</h1>
+                <div class="l-row__column">
+                    <h1 class="a-title --textAlign-centered">Columns</h1>
                 </div>
             </div>
             <div class="l-row">
                 <div class="l-row__column">
-                    <h2 class="a-title a-title--size-4">Available variables</h2>
+                    <h2 class="a-title a-title--subtitle --textAlign-centered">Available variables</h2>
                     <css-controller :fields="[
                         '--column-padding'
                     ]" />
