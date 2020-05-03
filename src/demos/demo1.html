@@ -14,23 +14,23 @@
 <body>
     <div id="app">
         <nav
-            class="l-navbar l-navbar--fluid l-navbar--absolute"
+            class="l-navbar l-navbar--fluid"
             role="navigation"
             aria-label="main navigation"
         >
             <div class="l-navbar__brand">
-                <router-link :to="{ name: 'home' }">
+                <a href="#">
                     Nexo CSS
-                </router-link>
+                </a>
             </div>
             <div class="l-navbar__menu">
                 <div class="l-navbar__start">
-                    <router-link
+                    <a
                         class="l-navbar__item"
-                        :to="{ name: 'variables' }"
+                        href="#"
                     >
                         Variables
-                    </router-link>
+                    </a>
                     <div class="l-navbar__item l-navbar__item--hasDropdown">
                         <a
                             href="#"
@@ -39,41 +39,63 @@
                             Layout
                         </a>
                         <div class="l-navbar__dropdown">
-                            <router-link
+                            <a
                                 class="l-navbar__item l-navbar__item--dropdown"
-                                :to="{ name: 'columns' }"
+                                href="#"
                             >
                                 Columns
-                            </router-link>
-                            <router-link
+                            </a>
+                            <a
                                 class="l-navbar__item l-navbar__item--dropdown"
-                                :to="{ name: 'typography' }"
+                                href="#"
                             >
                                 Typography
-                            </router-link>
-                            <router-link
+                            </a>
+                            <a
                                 class="l-navbar__item l-navbar__item--dropdown"
-                                :to="{ name: 'navbar' }"
+                                href="#"
                             >
                                 Navbar
-                            </router-link>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
         <section
-            class="l-section l-section--height-90vh"
+            class="l-section l-section--fixedHeight"
             style="background-image: url('img/demo1-2.jpg')"
         ></section>
-        <section class="l-section l-section--height-90vh">
-            <div class="l-container l-container--fluid">
-                <div class="l-row">
-                    <div class="l-row__column l-row__column--8">
-                        Test
+        <section
+            class="l-section l-section--backgroundPanorama"
+            style="background-image: url('img/13.jpg')"
+        >
+            <div class="l-container">
+                <div class="l-row --alignItems-center">
+                    <div class="l-row__column l-row__column l-row__column--5 --textAlign-center --padding-0">
+                        <h2 class="a-title">Quisque eget quam</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis sapien vulputate, lobortis quam sit amet, tempor dui. Phasellus eget massa odio. Integer dapibus arcu risus, sed tincidunt nunc egestas et. Ut ex magna, ultricies eu nisi vitae, feugiat lobortis orci. Integer at lorem non odio pharetra sagittis. Etiam pellentesque malesuada posuere.</p>
                     </div>
-                    <div class="l-row__column">
-                        <img src="img/demo1.jpg" alt="">
+                    <div class="l-row__column --padding-0 l-row__column--offset1">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="l-container">
+                <div class="l-row --alignItems-center">
+                    <div class="l-row__column l-row__column--6 --padding-0">
+                        <img src="img/7.jpg" alt="">
+                    </div>
+                    <div class="l-row__column l-row__column--offset1 --textAlign-center --padding-0">
+                        <h2 class="a-title">Nullam facilisis ultrices</h2>
+                        <p>Quisque eget quam quis ex eleifend convallis nec et tellus. Vestibulum ligula augue, faucibus posuere commodo et, ultrices nec lorem. Vestibulum nec hendrerit dolor, ac pellentesque nisl. Donec suscipit sagittis ligula a egestas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="l-container">
+                <div class="l-row --justifyContent-center">
+                    <div class="l-row__column l-row__column--6">
+                        <img src="img/1.jpg" alt="">
                     </div>
                 </div>
             </div>

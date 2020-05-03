@@ -11,3 +11,7 @@
                 +desktop
                     flex: none
                     width: percentage( $i / 12 )
+        @for $i from 1 through 11
+            &--offset#{$i}
+                +desktop
+                    margin-left: percentage( $i / 12 )

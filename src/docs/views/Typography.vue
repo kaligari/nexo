@@ -3,22 +3,21 @@
         <div class="l-container">
             <div class="l-row">
                 <div class="l-row__column">
-                    <h1 class="a-title --textAlign-centered">Typography</h1>
+                    <h1 class="a-title --textAlign-center">Typography</h1>
                 </div>
             </div>
             <div class="l-row">
                 <div class="l-row__column">
-                    <h2 class="a-title a-title--subtitle --textAlign-centered">Available variables</h2>
+                    <h2 class="a-title a-title--subtitle --textAlign-center">Available variables</h2>
                     <css-controller :fields="[
                         '--a-title-font-size',
                         '--a-title--subtitle-font-size',
-                        '--a-title-margin-bottom',
-                        '--a-title-weight'
+                        '--a-title-margin-bottom'
                     ]" />
                 </div>
             </div>
             <div class="l-row">
-                <div class="l-row__column --textAlign-centered">
+                <div class="l-row__column --textAlign-center">
                     <p class="a-title">Title size</p>
                     <p class="a-title a-title--subtitle">Subtitle</p>
                 </div>

@@ -1,5 +1,17 @@
+:root
+    --l-section--fixedHeight: 80vh
+
+
 .l-section
     background-position: bottom center
     background-size: cover
-    &--height-90vh
-        height: 90vh
+    padding-top: 3rem
+    padding-bottom: 3rem
+    &--backgroundPanorama
+        background-size: 100% auto
+        background-position: top center
+        background-repeat: no-repeat
+    &--fixedHeight
+        height: 100vh
+        +desktop
+            height: var(--l-section--fixedHeight)

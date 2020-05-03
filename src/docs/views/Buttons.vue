@@ -3,12 +3,12 @@
         <div class="l-container">
             <div class="l-row">
                 <div class="l-row__column">
-                    <h1 class="a-title --textAlign-centered">Buttons</h1>
+                    <h1 class="a-title --textAlign-center">Buttons</h1>
                 </div>
             </div>
             <div class="l-row">
                 <div class="l-row__column">
-                    <h2 class="a-title a-title--subtitle --textAlign-centered">Available variables</h2>
+                    <h2 class="a-title a-title--subtitle --textAlign-center">Available variables</h2>
                     <css-controller :fields="[
                         '--a-button-padding',
                         '--a-button-border-radius',
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="l-row">
-                <div class="l-row__column --textAlign-centered">
+                <div class="l-row__column --textAlign-center">
                     <button class="a-button">
                         Button
                     </button>
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="l-row">
-                <div class="l-row__column --textAlign-centered">
+                <div class="l-row__column --textAlign-center">
                     <a href="#" class="a-button">Anchor</a>
                     <button class="a-button">Button</button>
                     <input class="a-button" type="submit" value="Submit input">

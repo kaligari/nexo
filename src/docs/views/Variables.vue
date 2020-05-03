@@ -3,12 +3,12 @@
         <div class="l-container">
             <div class="l-row">
                 <div class="l-row__column">
-                    <h1 class="a-title --textAlign-centered">Variables (known as CSS Custom Properties)</h1>
+                    <h1 class="a-title --textAlign-center">Variables (known as CSS Custom Properties)</h1>
                 </div>
             </div>
             <div class="l-row">
                 <div class="l-row__column">
-                    <h2 class="a-title a-title--subtitle --textAlign-centered">Available global variables</h2>
+                    <h2 class="a-title a-title--subtitle --textAlign-center">Available global variables</h2>
                     <css-controller :fields="[
                         '--root-size',
                         '--size-default',
@@ -23,14 +23,16 @@
                         '--weight-bold',
                         '--weight-normal',
                         '--weight-light',
+                        '--font-family-primary',
+                        '--font-family-secondary'
                     ]" />
-                    <h2 class="a-title a-title--subtitle --textAlign-centered">Transition, animation speed variables</h2>
+                    <h2 class="a-title a-title--subtitle --textAlign-center">Transition, animation speed variables</h2>
                     <css-controller :fields="[
                         '--slow',
                         '--normal',
                         '--fast'
                     ]" />
-                    <h2 class="a-title a-title--subtitle --textAlign-centered">Body variables</h2>
+                    <h2 class="a-title a-title--subtitle --textAlign-center">Body variables</h2>
                     <css-controller :fields="[
                         '--body-background-color'
                     ]" />

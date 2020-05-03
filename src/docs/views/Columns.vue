@@ -3,12 +3,12 @@
         <div class="l-container">
             <div class="l-row">
                 <div class="l-row__column">
-                    <h1 class="a-title --textAlign-centered">Columns</h1>
+                    <h1 class="a-title --textAlign-center">Columns</h1>
                 </div>
             </div>
             <div class="l-row">
                 <div class="l-row__column">
-                    <h2 class="a-title a-title--subtitle --textAlign-centered">Available variables</h2>
+                    <h2 class="a-title a-title--subtitle --textAlign-center">Available variables</h2>
                     <css-controller :fields="[
                         '--column-padding'
                     ]" />
@@ -19,7 +19,7 @@
                 v-for="i in 11"
             >
                 <div
-                    class="l-row__column --textAlign-centered"
+                    class="l-row__column --textAlign-center"
                     :class="`l-row__column--${i}`"
                 >
                     <p class="a-notification">
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="l-row">
-                <div class="l-row__column l-row__column--12 --textAlign-centered">
+                <div class="l-row__column l-row__column--12 --textAlign-center">
                     <p class="a-notification">12</p>
                 </div>
             </div>
