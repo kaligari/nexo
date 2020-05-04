@@ -66,6 +66,12 @@
                             >
                                 Notifications
                             </router-link>
+                            <router-link
+                                class="l-navbar__item l-navbar__item--dropdown"
+                                :to="{ name: 'modal' }"
+                            >
+                                Modal
+                            </router-link>
                         </div>
                     </div>
                     <div class="l-navbar__item l-navbar__item--hasDropdown">

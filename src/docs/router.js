@@ -6,6 +6,7 @@ import Buttons from './views/Buttons'
 import Typography from './views/Typography'
 import Navbar from './views/Navbar'
 import Variables from './views/Variables'
+import Modal from './views/Modal'
 
 Vue.use(Router)
 
@@ -42,6 +43,10 @@ const router = new Router({
             path: '/variables',
             name: 'variables',
             component: Variables
+        },{
+            path: '/modal',
+            name: 'modal',
+            component: Modal
         }
     ]
 })
