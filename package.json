@@ -1,5 +1,5 @@
 {
-    "name": "nexo",
+    "name": "nexo-css",
     "version": "0.1.0",
     "description": "CSS framework based on modern technologies: Flexbox with BEM and Atomic Design methodologies.",
     "main": "index.js",
@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/kaligari/nexo.git"
+        "url": "git+https://github.com/kaligari/nexo-css.git"
     },
     "keywords": [
         "css",
@@ -28,9 +28,9 @@
     "author": "Sebastian Kopeć",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/kaligari/nexo/issues"
+        "url": "https://github.com/kaligari/nexo-css/issues"
     },
-    "homepage": "https://github.com/kaligari/nexo#readme",
+    "homepage": "https://github.com/kaligari/nexo-css#readme",
     "devDependencies": {
         "cross-env": "^7.0.2",
         "laravel-mix": "^5.0.4",
