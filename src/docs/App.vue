@@ -59,7 +59,7 @@
                                 :to="{ name: 'buttons' }"
                             >
                                 Buttons
-                            </router-link>                            
+                            </router-link>
                             <router-link
                                 class="l-navbar__item l-navbar__item--dropdown"
                                 :to="{ name: 'modal' }"
@@ -106,8 +106,12 @@ export default {
 </script>
 
 <style lang="sass">
+@import url('https://fonts.googleapis.com/css?family=Jost:300|Raleway:400,600&display=swap')
+
 body
     --body-background-color: #FFDDA1
+    --font-family-primary: 'Raleway', sans-serif
+    --font-family-secondary: 'Jost', serif
 
 .l-navbar__brand
     font-family: Michroma, sans-serif
