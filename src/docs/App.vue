@@ -59,13 +59,7 @@
                                 :to="{ name: 'buttons' }"
                             >
                                 Buttons
-                            </router-link>
-                            <router-link
-                                class="l-navbar__item l-navbar__item--dropdown"
-                                :to="{ name: 'notifications' }"
-                            >
-                                Notifications
-                            </router-link>
+                            </router-link>                            
                             <router-link
                                 class="l-navbar__item l-navbar__item--dropdown"
                                 :to="{ name: 'modal' }"
@@ -112,11 +106,20 @@ export default {
 </script>
 
 <style lang="sass">
+body
+    --body-background-color: #FFDDA1
+
 .l-navbar__brand
     font-family: Michroma, sans-serif
     font-size: 1.25rem
     a
         color: #17252a
         text-decoration: none
+
+.a-article
+    background: #D58936
+    margin-bottom: 1rem
+    border-radius: 8px
+    padding: 1rem
 
 </style>

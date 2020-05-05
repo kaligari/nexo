@@ -4,24 +4,36 @@
             <div class="l-row">
                 <div class="l-row__column">
                     <h1 class="a-title --textAlign-center">Modal</h1>
-                    <p>
-                        <a
-                            href="#"
-                            @click.prevent="modal = true"
-                        >Click</a> to trigger modal.
-                    </p>
                 </div>
             </div>
-            <div class="l-row">
-                <div class="l-row__column">
-                    <h2 class="a-title a-title--subtitle --textAlign-center">Available variables</h2>
-                    <css-controller :fields="[
-                        '--l-navbar-height',
-                        '--l-navbar__item-padding',
-                        '--l-navbar__item-color'
-                    ]" />
+            <article class="a-article">
+                <h2 class="a-title a-title--subtitle --textAlign-center">Code</h2>
+                <div class="l-row --alignItems-center">
+                    <div class="l-row__column --textAlign-center">
+                        <p>
+                            <a
+                                href="#"
+                                @click.prevent="modal = true"
+                            >Click</a> to trigger modal.
+                        </p>
+                    </div>
+                    <div class="l-row__column --textAlign-center">
+                        <the-prism language="html">{{ code[0] }}</the-prism>
+                    </div>
                 </div>
-            </div>
+            </article>
+            <article class="a-article">
+                <h2 class="a-title a-title--subtitle --textAlign-center">Available variables</h2>
+                <div class="l-row">
+                    <div class="l-row__column">
+                        <css-controller :fields="[
+                            '--l-navbar-height',
+                            '--l-navbar__item-padding',
+                            '--l-navbar__item-color'
+                        ]" />
+                    </div>
+                </div>
+            </article>
         </div>
         <div
             class="a-modal"
@@ -48,7 +60,15 @@
 export default {
     data() {
         return {
-            modal: true
+            modal: false,
+            code: [
+`<div class="a-modal a-modal--active">
+    <div class="a-modal__content">
+        <button class="a-modal__close"></button>
+        Any content
+    </div>
+</div>`
+            ]
         }
     }
 }
