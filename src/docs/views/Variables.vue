@@ -20,21 +20,20 @@
                         '--color-info',
                         '--radius-default',
                         '--column-padding',
-                        '--weight-bold',
-                        '--weight-normal',
-                        '--weight-light',
                         '--font-family-primary',
                         '--font-family-secondary'
                     ]" />
                     <h2 class="a-title a-title--subtitle --textAlign-center">Transition, animation speed variables</h2>
                     <css-controller :fields="[
-                        '--slow',
-                        '--normal',
-                        '--fast'
+                        '--speed-slow',
+                        '--speed-normal',
+                        '--speed-fast'
                     ]" />
                     <h2 class="a-title a-title--subtitle --textAlign-center">Body variables</h2>
                     <css-controller :fields="[
-                        '--body-background-color'
+                        '--body-background-color',
+                        '--hr-margin',
+                        '--hr-background-color'
                     ]" />
                 </div>
             </div>

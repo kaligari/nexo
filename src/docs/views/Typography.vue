@@ -12,7 +12,9 @@
                     <css-controller :fields="[
                         '--a-title-font-size',
                         '--a-title--subtitle-font-size',
-                        '--a-title-margin-bottom'
+                        '--a-title-margin-bottom',
+                        '--a-title-font-family',
+                        '--a-title-weight'
                     ]" />
                 </div>
             </div>

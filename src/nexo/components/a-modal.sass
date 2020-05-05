@@ -20,19 +20,38 @@
     &--active
         display: flex
     &__content
-        width: var(--a-modal-min-width)
+        min-width: var(--a-modal-min-width)
+        overflow: auto
+        width: auto
         background-color: #fff
         border-radius: var(--a-modal-border-radius)
         padding: var(--a-modal-padding)
         position: relative
     &__close
-        right: 0
-        position: position
+        top: var(--size-default)
+        right: var(--size-default)
+        position: absolute
+        background: transparent
+        border: 0
+        width: calc( var(--size-default) * 2)
+        height: calc( var(--size-default) * 2)
+        background-color: var(--a-button-background-color)
+        border-radius: var(--a-button-border-radius)
+        cursor: pointer
+        z-index: 2
         &::before,
         &::after
             content: ""
-            width: 1rem
-            height: 3px
+            width: var(--size-default)
+            height: 2px
             background-color: var(--color-text)
             display: block
+            position: absolute
+            transform-origin: center
+            left: 25%
+            // top: 25%
+        &::before
+            transform: rotate(45deg)
+        &::after
+            transform: rotate(-45deg)
 

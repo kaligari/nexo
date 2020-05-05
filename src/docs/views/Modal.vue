@@ -28,10 +28,10 @@
             :class="{'a-modal--active':modal}"
         >
             <div class="a-modal__content">
-                <div
+                <button
                     class="a-modal__close"
                     @click="modal = false"
-                ></div>
+                ></button>
                 <h1 class="a-title --textAlign-center">Modal</h1>
                 <p class=" --textAlign-center">
                     <a
