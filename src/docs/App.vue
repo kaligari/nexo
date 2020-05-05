@@ -77,7 +77,7 @@
                 </div>
                 <div class="l-navbar__end">
                     <a
-                        href="https://github.com/kaligari/nexo"
+                        href="https://github.com/kaligari/nexo-css"
                         target="_blank"
                         class="a-button"
                     >
