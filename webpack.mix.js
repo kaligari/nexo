@@ -13,18 +13,12 @@ if (mix.inProduction()) {
 	mix
 	.sass('./src/nexo/main.sass', './build/nexo.min.css')
 	.copy('./src/docs/index.html', './docs/index.html')
-	.copy('./src/demos/*', './docs/demos/')
-	.copy('./src/demos/css/*', './docs/demos/css/')
-	.copy('./src/demos/img/*', './docs/demos/img/')
 	.copy('./build/nexo.min.css', './docs/nexo.min.css')
 	.js('./src/docs/main.js', './docs/docs.js')
 } else {
 	// watch
 	mix
 	.copy('./src/docs/index.html', './dist/index.html')
-	.copy('./src/demos/*', './dist/demos/')
-	.copy('./src/demos/css/*', './dist/demos/css/')
-	.copy('./src/demos/img/*', './dist/demos/img/')
 	.sass('./src/nexo/main.sass', './dist/nexo.min.css')
 	.js('./src/docs/main.js', './dist/docs.js')
 }
