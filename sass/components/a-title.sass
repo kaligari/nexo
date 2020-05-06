@@ -1,16 +1,25 @@
 body
     /* Size */
-    --a-title-font-size: 2.5rem
     --a-title-font-family: var(--font-family-secondary)
-    --a-title--subtitle-font-size: 1.5rem
-    --a-title-margin-bottom: var(--size-default)
+    --a-title-font-size: 2.5rem
+    --a-title-line-height: 1.5
     --a-title-weight: 600
+    --a-title-margin-bottom: var(--size-default)
+    --a-title--subtitle-font-size: 1.5rem
+    --a-title--subtitle-line-height: 1.5
+    --a-title--subtitle-font-family: var(--font-family-secondary)
+    --a-title--subtitle-weight: 600
+    --a-title--subtitle-margin-bottom: var(--size-default)
 
 .a-title
-
     font-size: var(--a-title-font-size)
     font-weight: var(--a-title-weight)
-    margin-bottom: var(--a-title-margin-bottom)
     font-family: var(--a-title-font-family)
+    margin-bottom: var(--a-title-margin-bottom)
+    line-height: var(--a-title-line-height)
     &--subtitle
         font-size: var(--a-title--subtitle-font-size)
+        font-family: var(--a-title--subtitle-font-family)
+        font-weight: var(--a-title--subtitle-weight)
+        margin-bottom: var(--a-title--subtitle-margin-bottom)
+        line-height: var(--a-title--subtitle-line-height)

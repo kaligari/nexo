@@ -30,11 +30,16 @@
                 <div class="l-row">
                     <div class="l-row__column">
                         <css-controller :fields="[
-                        '--a-title-font-size',
-                        '--a-title--subtitle-font-size',
-                        '--a-title-margin-bottom',
                         '--a-title-font-family',
-                        '--a-title-weight'
+                        '--a-title-font-size',
+                        '--a-title-line-height',
+                        '--a-title-weight',
+                        '--a-title-margin-bottom',
+                        '--a-title--subtitle-font-size',
+                        '--a-title--subtitle-line-height',
+                        '--a-title--subtitle-font-family',
+                        '--a-title--subtitle-weight',
+                        '--a-title--subtitle-margin-bottom'
                         ]" />
                     </div>
                 </div>
