@@ -11,7 +11,7 @@ mix.options({
 if (mix.inProduction()) {
 	// build
 	mix
-	.sass('./nexo.sass', './build/nexo.min.css')
+	.sass('./nexo-css.sass', './build/nexo.min.css')
 	.copy('./src/docs/index.html', './docs/index.html')
 	.copy('./build/nexo.min.css', './docs/nexo.min.css')
 	.js('./src/docs/main.js', './docs/docs.js')
@@ -19,6 +19,6 @@ if (mix.inProduction()) {
 	// watch
 	mix
 	.copy('./src/docs/index.html', './dist/index.html')
-	.sass('./nexo.sass', './dist/nexo.min.css')
+	.sass('./nexo-css.sass', './dist/nexo.min.css')
 	.js('./src/docs/main.js', './dist/docs.js')
 }
