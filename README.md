@@ -5,10 +5,16 @@ Checkout our documentation: https://kaligari.github.io/nexo-css/
 
 ## Main features:
 
-- BEM combine with Atomic Design naming convention
+- BEM combined with Atomic Design naming conventions
 (e.g **.a-message__header--large**)
 - Flexbox
-- CSS variables
+- CSS properties (variables)
 - Mobile first
 - Lightweight
-- Modificator classes (e.g .--noBorder)
+- Modificators' classes (e.g **.--noBorder**)
+
+## Main advantages:
+
+- easy and fast development and maintaining of code
+- modularity
+- customizing using CSS properties
