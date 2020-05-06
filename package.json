@@ -1,6 +1,6 @@
 {
     "name": "nexo-css",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "CSS framework based on modern technologies: Flexbox with BEM and Atomic Design methodologies.",
     "main": "nexo-css.sass",
     "directories": {
