@@ -22,6 +22,9 @@
                     <div class="l-row__column --textAlign-center">
                         <button class="a-button a-button--primary">
                             Button primary
+                        </button><br /><br />
+                        <button class="a-button a-button--secondary">
+                            Button secondary
                         </button>
                     </div>
                     <div class="l-row__column --textAlign-center">
@@ -54,7 +57,13 @@
                             '--a-button-primary-background-color',
                             '--a-button-primary-color',
                             '--a-button-primary-hover-background-color',
-                            '--a-button-primary-hover-color'
+                            '--a-button-primary-hover-color',
+                            '--a-button-secondary-color',
+                            '--a-button-secondary-background-color',
+                            '--a-button-secondary-border-color',
+                            '--a-button-secondary-hover-color',
+                            '--a-button-secondary-hover-background-color',
+                            '--a-button-secondary-hover-border-color'
                         ]" />
                     </div>
                 </div>
@@ -69,7 +78,7 @@ export default {
         return {
             code: [
                 `<button class="a-button">Button</button>`,
-                `<button class="a-button a-button--primary">\n    Button primary\n</button>`,
+                `<button class="a-button a-button--primary">\n    Button primary\n</button>\n\n<button class="a-button a-button--secondary">\n    Button secondary\n</button>`,
                 `<a href="#" class="a-button">Anchor</a>\n<input class="a-button" type="submit" value="Submit input">\n<input class="a-button" type="reset" value="Reset input">`
             ]
         }

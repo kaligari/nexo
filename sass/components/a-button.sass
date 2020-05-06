@@ -13,12 +13,24 @@
     --a-button-hover-color: var(--color-secondary)
 
     /* Primary colors */
-    --a-button-primary-background-color: var(--color-primary)
     --a-button-primary-color: var(--color-secondary)
+    --a-button-primary-background-color: var(--color-primary)
+    --a-button-primary-border-color: var(--color-secondary)
 
     /* Primary hover */
     --a-button-primary-hover-background-color: transparent
     --a-button-primary-hover-color: var(--color-primary)
+    --a-button-primary-hover-border-color: var(--color-secondary)
+
+    /* Secondary colors */
+    --a-button-secondary-color: var(--color-primary)
+    --a-button-secondary-background-color: var(--color-secondary)
+    --a-button-secondary-border-color: var(--color-secondary)
+
+    /* Secondary hover */
+    --a-button-secondary-hover-color: var(--color-secondary)
+    --a-button-secondary-hover-background-color: transparent
+    --a-button-secondary-hover-border-color: var(--color-secondary)
 
 .a-button
     background-color: var(--a-button-background-color)
@@ -32,6 +44,8 @@
     padding: var(--a-button-padding)
     text-decoration: none
     transition: background-color var(--speed-normal), color var(--speed-normal), border-color var(--speed-normal)
+    align-items: center
+    justify-content: center
     user-select: none
     &:hover
         background-color: var(--a-button-hover-background-color)
@@ -42,3 +56,13 @@
         &:hover
             background-color: var(--a-button-primary-hover-background-color)
             color: var(--a-button-primary-hover-color)
+    &--secondary
+        color: var(--a-button-secondary-color)
+        background-color: var(--a-button-secondary-background-color)
+        border-color: var(--a-button-secondary-border-color)
+        &:hover
+            color: var(--a-button-secondary-hover-color)
+            background-color: var(--a-button-secondary-hover-background-color)
+            border-color: var(--a-button-secondary-hover-border-color)
+    &__icon
+        margin-left: .5rem
