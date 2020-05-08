@@ -1,10 +1,13 @@
 \:root
     --a-control-border-radius: calc( var(--radius-default) / 2)
     --a-control-color: var(--color-text)
-
+    --a-control-border: 1px solid var(--color-primary)
+    --a-control-input-padding: .5rem 1rem
 .a-control
     &__input
         padding: .25rem
-        border: 1px solid gray
         border-radius: var(--a-control-border-radius)
         color: var(--a-control-color)
+        width: 100%
+        border: var(--a-control-border)
+        padding: var(--a-control-input-padding)
