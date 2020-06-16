@@ -1,12 +1,19 @@
 .l-row
+    $this: &
     +desktop
         display: flex
+    &--touch
+        display: flex
+        #{$this}__column
+            flex-grow: 1
+            flex-basis: 0
     &--multiline
         flex-wrap: wrap
     &--wrap
         flex-wrap: wrap
     &__column
-        padding: var(--column-padding)
+        &:not(#{$this}__column--paddingless)
+            padding: var(--column-padding)
         +desktop
             flex-grow: 1
             flex-basis: 0
