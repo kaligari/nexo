@@ -1,31 +1,31 @@
 body
     --a-button-border-radius: var(--radius-default)
-    --a-modal-border-radius: var(--radius-default)
-    --a-modal-min-width: 600px
-    --a-modal-background-color: rgba(0,0,0,0.5)
-    --a-modal-z-index: 100
-    --a-modal-padding: 1.5rem
+    --o-modal-border-radius: var(--radius-default)
+    --o-modal-min-width: 600px
+    --o-modal-background-color: rgba(0,0,0,0.5)
+    --o-modal-z-index: 100
+    --o-modal-padding: 1.5rem
 
-.a-modal
+.o-modal
     display: none
     position: fixed
     left: 0
     top: 0
-    z-index: var(--a-modal-z-index)
+    z-index: var(--o-modal-z-index)
     min-width: 100vw
     height: 100vh
-    background-color: var(--a-modal-background-color)
+    background-color: var(--o-modal-background-color)
     align-items: center
     justify-content: center
     &--active
         display: flex
     &__content
-        min-width: var(--a-modal-min-width)
+        min-width: var(--o-modal-min-width)
         overflow: auto
         width: auto
         background-color: #fff
-        border-radius: var(--a-modal-border-radius)
-        padding: var(--a-modal-padding)
+        border-radius: var(--o-modal-border-radius)
+        padding: var(--o-modal-padding)
         position: relative
     &__close
         top: var(--size-default)

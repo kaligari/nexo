@@ -27,21 +27,24 @@
                 <div class="l-row">
                     <div class="l-row__column">
                         <css-controller :fields="[
-                            '--l-navbar-height',
-                            '--l-navbar__item-padding',
-                            '--l-navbar__item-color'
+                            '--a-button-border-radius',
+                            '--o-modal-border-radius',
+                            '--o-modal-min-width',
+                            '--o-modal-background-color',
+                            '--o-modal-z-index',
+                            '--o-modal-padding',
                         ]" />
                     </div>
                 </div>
             </article>
         </div>
         <div
-            class="a-modal"
-            :class="{'a-modal--active':modal}"
+            class="o-modal"
+            :class="{'o-modal--active':modal}"
         >
-            <div class="a-modal__content">
+            <div class="o-modal__content">
                 <button
-                    class="a-modal__close"
+                    class="o-modal__close"
                     @click="modal = false"
                 ></button>
                 <h1 class="a-title --textAlign-center">Modal</h1>
@@ -62,9 +65,9 @@ export default {
         return {
             modal: false,
             code: [
-`<div class="a-modal a-modal--active">
-    <div class="a-modal__content">
-        <button class="a-modal__close"></button>
+`<div class="o-modal o-modal--active">
+    <div class="o-modal__content">
+        <button class="o-modal__close"></button>
         Any content
     </div>
 </div>`
