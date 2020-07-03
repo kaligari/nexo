@@ -38,7 +38,7 @@ export default {
         this.fields.forEach(field => {
             this.$store.commit('SET_VALUE', {
                 name: field,
-                value: getComputedStyle(document.documentElement).getPropertyValue(field).trim()
+                value: getComputedStyle(document.body).getPropertyValue(field).trim()
             })
         })
     }

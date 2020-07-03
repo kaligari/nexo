@@ -92,7 +92,7 @@ export default {
             deep: true,
             handler() {
                 for(const [item, key] of Object.entries(this.VuexStyles)) {
-                    document.documentElement.style.setProperty(item, key)
+                    document.body.style.setProperty(item, key)
                 }
             }
         }
