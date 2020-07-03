@@ -1,4 +1,4 @@
-\:root
+body
     /* Size, shape */
     --a-button-padding: var(--size-default) calc(var(--size-default) * 2)
     --a-button-border-radius: var(--radius-default)
@@ -11,6 +11,7 @@
     /* Default hover */
     --a-button-hover-background-color: var(--color-primary)
     --a-button-hover-color: var(--color-secondary)
+    --a-button-hover-border-color: var(--color-primary)
 
     /* Primary colors */
     --a-button-primary-color: var(--color-secondary)
@@ -50,12 +51,15 @@
     &:hover
         background-color: var(--a-button-hover-background-color)
         color: var(--a-button-hover-color)
+        border-color: var(--a-button-hover-border-color)
     &--primary
         color: var(--a-button-primary-color)
         background-color: var(--a-button-primary-background-color)
+        border-color: var(--a-button-primary-border-color)
         &:hover
             background-color: var(--a-button-primary-hover-background-color)
             color: var(--a-button-primary-hover-color)
+            border-color: var(--a-button-primary-hover-border-color)
     &--secondary
         color: var(--a-button-secondary-color)
         background-color: var(--a-button-secondary-background-color)
