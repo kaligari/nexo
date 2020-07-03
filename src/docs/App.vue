@@ -91,9 +91,13 @@ export default {
         VuexStyles: {
             deep: true,
             handler() {
-                for(const [item, key] of Object.entries(this.VuexStyles)) {
-                    document.body.style.setProperty(item, key)
-                }
+                this.VuexStyles.forEach(item => {
+                    if(item.root){
+                        document.documentElement.style.setProperty(item.name, item.value)
+                    } else {
+                        document.body.style.setProperty(item.name, item.value)
+                    }
+                })
             }
         }
     },

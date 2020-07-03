@@ -5,11 +5,21 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        cssVariables: {}
+        cssVariables: []
     },
     mutations: {
         SET_VALUE(state, payload){
-            Vue.set(state.cssVariables, payload.name, payload.value)
+            const pos = state.cssVariables.findIndex(item => item.name === payload.name)
+            const object = {
+                name: payload.name,
+                value: payload.value,
+                root: payload.root
+            }
+            if(pos == -1){
+                state.cssVariables.push(object)
+            } else {
+                Vue.set(state.cssVariables, pos, object)
+            }
         }
     },
     getters : {
