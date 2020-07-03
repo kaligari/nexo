@@ -5,6 +5,7 @@
                 <div class="l-row__column l-row__column--8 --textAlign-center">
                     <div class="m-content">
                         <h1 class="a-title">Nexo CSS</h1>
+                        <hr class="a-hr" />
                         <h2 class="a-title a-title--subtitle">Nexo CSS Framework</h2>
                         <p>
                             CSS framework based on modern technologies: Flexbox with BEM and Atomic Design methodologies.
