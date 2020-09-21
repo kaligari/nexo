@@ -1,6 +1,6 @@
 {
     "name": "nexo-css",
-    "version": "0.1.10",
+    "version": "0.1.11",
     "description": "CSS framework based on modern technologies: Flexbox with BEM and Atomic Design methodologies.",
     "main": "nexo-css.sass",
     "directories": {
@@ -33,7 +33,7 @@
     "homepage": "https://github.com/kaligari/nexo-css#readme",
     "devDependencies": {
         "cross-env": "^7.0.2",
-        "laravel-mix": "^5.0.4",
+        "laravel-mix": "^5.0.5",
         "prismjs": "^1.20.0",
         "sass": "^1.26.3",
         "sass-loader": "^8.0.2",
