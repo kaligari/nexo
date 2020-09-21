@@ -8,11 +8,22 @@
         display: flex
         #{$this}__column
             flex-grow: 1
-            flex-basis: 0
     &--multiline
         flex-wrap: wrap
     &--wrap
         flex-wrap: wrap
+    &--start
+        justify-content: flex-start
+    &--center
+        justify-content: center
+    &--end
+        justify-content: flex-end
+    &--verticalStart
+        align-items: flex-start
+    &--verticalCenter
+        align-items: center
+    &--verticalEnd
+        align-items: flex-end
     &__column
         &:not(#{$this}__column--paddingless)
             padding: var(--column-padding)
