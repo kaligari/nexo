@@ -17,6 +17,9 @@ body
     background-color: var(--o-modal-background-color)
     align-items: center
     justify-content: center
+    max-width: calc( 100vw - 2rem)
+    +desktop
+        max-width: none
     &--active
         display: flex
     &__content
@@ -27,6 +30,10 @@ body
         border-radius: var(--o-modal-border-radius)
         padding: var(--o-modal-padding)
         position: relative
+        min-width: calc( 100vw - 2rem)
+        width: calc( 100vw - 2rem)
+        +desktop
+            min-width: var(--o-modal-min-width)
     &__close
         top: var(--size-default)
         right: var(--size-default)
