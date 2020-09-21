@@ -37,6 +37,18 @@ time, mark, audio, video {
 strong, b {
     font-weight: 600;
 }
+i, em {
+    font-style: italic;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -51,6 +63,10 @@ body {
 ol, ul {
     list-style: disc;
     text-align: left;
+    list-style-position: inside;
+}
+ol {
+    list-style-type: decimal;
 }
 
 blockquote, q {
